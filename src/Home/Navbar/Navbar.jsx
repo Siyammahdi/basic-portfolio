@@ -13,7 +13,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="bg-base-100">
+        <div className="fixed bg-black bg-opacity-20 backdrop-blur-lg  top-0 w-full">
             <ComponentLayout>
                 <div className="navbar">
                     <div className="navbar-start">
@@ -25,14 +25,14 @@ const Navbar = () => {
                                 {navItems}
                             </ul>
                         </div>
-                        <a className="text-2xl">Siyam <span className="">Mahdi</span></a>
+                        <a className="text-2xl font-bold">Codo<span className="">nut.</span></a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
                             {navItems}
                         </ul>
                     </div>
-                    <div className="navbar-end list-none text-3xl space-x-3">
+                    <div className="navbar-end list-none text-xl space-x-4">
                         <li><a href=""><FaFacebook /></a></li>
                         <li><a href=""><FaGithub /></a></li>
                         <li><a href=""><FaXTwitter /></a></li>
