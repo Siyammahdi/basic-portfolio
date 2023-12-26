@@ -13,7 +13,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="fixed bg-black bg-opacity-20 backdrop-blur-lg  top-0 w-full">
+        <div className="fixed bg-black bg-opacity-20 backdrop-blur-lg z-[1] top-0 w-full">
             <ComponentLayout>
                 <div className="navbar">
                     <div className="navbar-start">
