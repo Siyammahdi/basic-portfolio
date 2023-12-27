@@ -41,7 +41,7 @@ const BannerCards = () => {
     return (
         <div>
             <ComponentLayout>
-                <card className="flex gap-5">
+                <div className="flex gap-5">
                     {
                         CardList.map(({ id, title, detail, icon }) => (
                             <div key={id} className="card w-full " 
@@ -60,7 +60,7 @@ const BannerCards = () => {
                             </div>
                         ))
                     }
-                </card>
+                </div>
             </ComponentLayout>
         </div>
     );
