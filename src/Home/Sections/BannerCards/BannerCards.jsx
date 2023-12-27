@@ -3,6 +3,10 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import { IoDiamondOutline } from "react-icons/io5";
 import ComponentLayout from "../../ComponentLayout/ComponentLayout";
 import Tilt from 'react-parallax-tilt';
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
+import { useEffect } from "react";
 
 const CardList = [
     {
@@ -27,21 +31,29 @@ const CardList = [
 
 
 const BannerCards = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 600,
+        });
+      }, []); 
+
     return (
         <div>
             <ComponentLayout>
-                <card className="flex gap-5 pb-24">
+                <card className="flex gap-5">
                     {
                         CardList.map(({ id, title, detail, icon }) => (
-                            <div key={id} className="card w-96 h-full">
-                                <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
-                                <div className=" bg-purple-950 backdrop-blur-md bg-opacity-70 rounded-xl px-4 py-8 shadow-xl ">
+                            <div key={id} className="card w-full " 
+                            >
+                                <Tilt tiltReverse={true} tiltMaxAngleX={5} tiltMaxAngleY={5}>
+                                <div className=" bg-purple-950 backdrop-blur-md bg-opacity-60 rounded-xl px-4 py-8 shadow-xl "  data-aos="fade-up" data-aos-delay={(id - 1) * 200} >
                                     <div className="px-8">
-                                        <a className="text-7xl text-start text-blue-500">{icon}</a>
+                                        <a className="text-6xl text-start text-blue-400">{icon}</a>
                                     </div>
                                     <div className="card-body pb-0">
                                         <h2 className="card-title text-xl text-white">{title}</h2>
-                                        <p>{detail}</p>
+                                        <p className="">{detail}</p>
                                     </div>
                                 </div>
                                 </Tilt>
