@@ -33,9 +33,9 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end list-none text-xl space-x-4">
-                        <li><a href=""><FaFacebook /></a></li>
-                        <li><a href=""><FaGithub /></a></li>
-                        <li><a href=""><FaXTwitter /></a></li>
+                        <li><a className="hover:text-blue-500" href="https://www.facebook.com/siyammahdi911"><FaFacebook /></a></li>
+                        <li><a className="hover:text-gray-600" href="https://github.com/Siyammahdi"><FaGithub /></a></li>
+                        <li><a className="hover:text-gray-600" href="https://twitter.com/siyam_mahdi"><FaXTwitter /></a></li>
                     </div>
                 </div>
             </ComponentLayout>

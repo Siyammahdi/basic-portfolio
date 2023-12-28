@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import ComponentLayout from '../../ComponentLayout/ComponentLayout';
 import Tilt from 'react-parallax-tilt';
 import { Waypoint } from 'react-waypoint';
+import Aos from 'aos';
 
 
 const AchievementData = [
@@ -29,6 +30,12 @@ const Achievements = () => {
   const startCounting = () => {
     setIsCounting(true);
   };
+
+  useEffect(() => {
+    Aos.init({
+      duration: 600,
+    });
+  }, []); 
 
   return (
     <ComponentLayout>

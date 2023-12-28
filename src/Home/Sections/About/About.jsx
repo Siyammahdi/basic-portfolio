@@ -7,6 +7,7 @@ import { SlBadge } from "react-icons/sl";
 import { useEffect } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css'
+import Tilt from 'react-parallax-tilt';
 
 
 const About = () => {
@@ -25,9 +26,9 @@ const About = () => {
 
     useEffect(() => {
         AOS.init({
-          duration: 600,
+            duration: 600,
         });
-      }, []); 
+    }, []);
 
     return (
         <div className="my-36">
@@ -36,9 +37,13 @@ const About = () => {
             <ComponentLayout>
                 <div className="flex items-center">
                     <div className="w-1/2">
-                        <div data-aos="fade-right" data-aos-delay={500}  className="text-6xl text-white p-3 bg-blue-400 rounded-lg w-fit relative top-48"><SlBadge /></div>
-                        <img className="w-3/6 rounded-2xl mx-auto" src={about1} alt="" />
-                        <img className="rounded-2xl w-2/5 -mt-24" src={about2} alt="" />
+                        <div data-aos="fade-right" data-aos-delay={500} className="text-6xl text-white p-3 bg-blue-400 rounded-lg w-fit relative top-48"><SlBadge /></div>
+                        <Tilt tiltMaxAngleX={6} tiltMaxAngleY={6}>
+                            <img className="w-3/6 rounded-2xl mx-auto" src={about1} alt="" />
+                        </Tilt>
+                        <Tilt tiltMaxAngleX={6} tiltMaxAngleY={6}>
+                            <img className="rounded-2xl w-2/5 -mt-24" src={about2} alt="" />
+                        </Tilt>
                         <div data-aos="fade-left" data-aos-delay={100} className="flex items-center text-sm border-l-8 border-blue-400 font-semibold relative left-1/2 bottom-20 text-white"><span className="text-5xl px-3">1</span> <span className="pt-1">Successful <br /> Years</span> </div>
                     </div>
                     <div className="w-1/2">
