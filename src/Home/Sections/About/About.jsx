@@ -33,7 +33,7 @@ const About = () => {
     return (
         <div className="my-36">
             <SubHeading>About Me</SubHeading>
-            <Heading>A Passionate Developer Who Loves to Code</Heading>
+            <Heading>A Passionate Developer Who <br /> Loves to Code</Heading>
             <ComponentLayout>
                 <div className="flex items-center">
                     <div className="w-1/2">

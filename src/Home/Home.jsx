@@ -5,6 +5,7 @@ import BannerCards from "./Sections/BannerCards/BannerCards";
 import About from "./Sections/About/About";
 import Achievements from "./Sections/Achievements/Achievements";
 import Skills from "./Sections/Skills/Skills";
+import Services from "./Sections/Services/Services";
 // import { useState } from "react";
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
             <About />
             <Achievements />
             <Skills />
+            <Services />
         </div>
     );
 };

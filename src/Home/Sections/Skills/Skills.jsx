@@ -56,7 +56,7 @@ const Skills = () => {
                                 <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
                                     <div
                                         style={{ width: `${isAnimated ? skill.percentage : 0}%`, transitionDelay: `${isAnimated ? index * 0.2 : 0}s` }}
-                                        className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center rounded-r-sm bg-blue-500 transition-all duration-500"
+                                        className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center rounded-r-sm bg-gradient-to-r from-cyan-500 to-blue-500 transition-all duration-500"
                                     ></div>
                                 </div>
                             </div>
