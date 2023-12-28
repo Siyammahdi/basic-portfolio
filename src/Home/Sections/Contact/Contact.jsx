@@ -23,7 +23,7 @@ const Contact = () => {
         // Handle form submission logic here
         console.log(contactData);
 
-        fetch("http://localhost:5000/contact", {
+        fetch("https://portfolio-server-ten-khaki.vercel.app/contact", {
             method: "POST",
             headers: {
                 "content-type" : "application/json"
