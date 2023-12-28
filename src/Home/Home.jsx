@@ -6,6 +6,8 @@ import About from "./Sections/About/About";
 import Achievements from "./Sections/Achievements/Achievements";
 import Skills from "./Sections/Skills/Skills";
 import Services from "./Sections/Services/Services";
+import Contact from "./Sections/Contact/Contact";
+import Footer from "./Footer/Footer";
 // import { useState } from "react";
 
 const Home = () => {
@@ -28,6 +30,8 @@ const Home = () => {
             <Achievements />
             <Skills />
             <Services />
+            <Contact />
+            <Footer />
         </div>
     );
 };
