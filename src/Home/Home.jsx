@@ -8,17 +8,24 @@ import Skills from "./Sections/Skills/Skills";
 import Services from "./Sections/Services/Services";
 import Contact from "./Sections/Contact/Contact";
 import Footer from "./Footer/Footer";
-// import { useState } from "react";
+import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 const Home = () => {
 
-    // const [displayWidth, setDisplayWidth] = useState(0);
-    // const width = window.innerWidth;
-    // setDisplayWidth(width)
-    
-    // if(displayWidth < 0){
-    //     alert("Open in a laptop or desktop for better result")
-    // }
+    const [displayWidth, setDisplayWidth] = useState(0);
+    console.log(displayWidth);
+
+    useEffect(() => {
+        const width = window.innerWidth;
+        setDisplayWidth(width);
+
+        if (width < 768) { // Adjust the breakpoint as needed
+            Swal.fire({
+                text:"It's better if you browse this site with computer or any large device",
+            });
+        }
+    }, []);
 
 
     return (

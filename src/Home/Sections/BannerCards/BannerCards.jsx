@@ -41,7 +41,7 @@ const BannerCards = () => {
     return (
         <div>
             <ComponentLayout>
-                <div className="flex gap-5">
+                <div className="flex flex-col lg:flex-row lg:mx-0 mx-5 lg:pt-0 pt-12 gap-5">
                     {
                         CardList.map(({ id, title, detail, icon }) => (
                             <div key={id} className="card w-full " 
@@ -53,7 +53,7 @@ const BannerCards = () => {
                                     </div>
                                     <div className="card-body pb-0">
                                         <h2 className="card-title text-xl text-white">{title}</h2>
-                                        <p className="">{detail}</p>
+                                        <p className="text-sm lg:text-base">{detail}</p>
                                     </div>
                                 </div>
                                 </Tilt>

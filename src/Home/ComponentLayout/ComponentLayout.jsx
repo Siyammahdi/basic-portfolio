@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const ComponentLayout = ({children}) => {
     return (
-        <div className="max-w-5xl mx-auto">
+        <div className="lg:max-w-5xl max-w-full mx-auto">
             {children}
         </div>
     );

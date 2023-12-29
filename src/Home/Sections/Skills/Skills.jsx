@@ -31,7 +31,7 @@ const Skills = () => {
 
     return (
         <ComponentLayout>
-            <div className="py-10">
+            <div id='skills' className="py-10 lg:mx-0 mx-8">
                 <SubHeading>Skills</SubHeading>
                 <Heading>I Work Hard to Improve My Skills Regularly</Heading>
                 <div className="grid grid-cols-1 items-center lg:grid-cols-2 gap-8 my-10">

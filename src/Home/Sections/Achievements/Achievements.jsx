@@ -22,6 +22,11 @@ const AchievementData = [
     count: '54',
     name: 'Total Projects',
   },
+  {
+    id: 4,
+    count: '1',
+    name: 'Year Experience',
+  },
 ];
 
 const Achievements = () => {
@@ -39,7 +44,7 @@ const Achievements = () => {
 
   return (
     <ComponentLayout>
-      <div className="flex gap-5 justify-center mt-8 pb-36">
+      <div className="flex flex-col lg:flex-row mx-5 lg:mx-0 gap-5 justify-center mt-8 pb-36">
         {AchievementData.map((achievement) => (
           <Tilt key={achievement.id} tiltMaxAngleX={6} tiltMaxAngleY={6} className="w-full">
             <Waypoint onEnter={startCounting} bottomOffset="20%">
